@@ -7,28 +7,36 @@
 
 import UIKit
 
+
+
 class SecondVC: UIViewController {
 
-    var dataColor: UIColor?
-    @IBOutlet weak var viewOutlet: UIView! { didSet { viewOutlet.backgroundColor = dataColor } }
+    var delegate: DataColorProtocol?
+    var complitonHandler: ( (UIColor) -> () )?
+    var color: UIColor?
+    @IBOutlet weak var viewOutlet: UIView! { didSet {viewOutlet.backgroundColor = color} }
     @IBOutlet weak var redTF: UITextField!
     @IBOutlet weak var greenTF: UITextField!
     @IBOutlet weak var blueTF: UITextField!
     @IBOutlet weak var hexColorTF: UITextField!
     @IBOutlet weak var opacityTF: UITextField!
-    @IBOutlet weak var colorViewOutlet: UIView!
+    @IBOutlet var colorViewOutlet: UIView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
     
     @IBAction func deleganeAction() {
-        
+        delegate?.dataColor(data: colorViewOutlet.backgroundColor ?? .white)
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func closureAction() {
+//        let stor = UIStoryboard(name: "Main", bundle: nil)
+//        guard let vc = stor.instantiateViewController(withIdentifier: "FirstVC") as? FirstVC else { return }
+//
+        guard let complitonHandler = complitonHandler else { return }
+        complitonHandler(colorViewOutlet.backgroundColor ?? .white)
+        navigationController?.popViewController(animated: true)
     }
-    
-
 }
+
+
+
