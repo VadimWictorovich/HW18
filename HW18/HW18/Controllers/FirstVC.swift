@@ -11,15 +11,11 @@ protocol DataColorProtocol {
     func dataColor(data: UIColor)
 }
 
-class FirstVC: UIViewController {
-    
-    //var color: UIColor?
-    var complitonHandler: ( (UIColor) -> () )?
-    @IBOutlet var viewOut: UIView!
-    
-    
-    
-    @IBAction func changeBGAction() {
+private class FirstVC: UIViewController {
+    var complitonHandler: ((UIColor) -> ())?
+    @IBOutlet private var viewOut: UIView!
+
+    @IBAction private func changeBGAction() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let vc = storyboard.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC else { return }
         vc.color = viewOut.backgroundColor
