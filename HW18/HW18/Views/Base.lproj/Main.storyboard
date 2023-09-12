@@ -67,9 +67,12 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="NBW-Pm-EFO">
                                                         <rect key="frame" x="0.0" y="30.333333333333343" width="313" height="34"/>
                                                         <subviews>
-                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SSr-x8-l2R">
-                                                                <rect key="frame" x="0.0" y="15" width="228" height="4"/>
-                                                            </progressView>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gay-vm-yk8">
+                                                                <rect key="frame" x="-2" y="2" width="232" height="31"/>
+                                                                <connections>
+                                                                    <action selector="changeColorAction" destination="KVD-N9-h6e" eventType="valueChanged" id="TOS-wa-U01"/>
+                                                                </connections>
+                                                            </slider>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nzt-FQ-ZLf">
                                                                 <rect key="frame" x="243" y="0.0" width="70" height="34"/>
                                                                 <constraints>
@@ -94,9 +97,12 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="J6K-uO-Cus">
                                                         <rect key="frame" x="0.0" y="30.333333333333314" width="313" height="34"/>
                                                         <subviews>
-                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ORJ-4S-dWW">
-                                                                <rect key="frame" x="0.0" y="15.000000000000028" width="228" height="4"/>
-                                                            </progressView>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PUe-zC-6qV">
+                                                                <rect key="frame" x="-2" y="2" width="232" height="31"/>
+                                                                <connections>
+                                                                    <action selector="changeColorAction" destination="KVD-N9-h6e" eventType="valueChanged" id="OJG-Ft-E0o"/>
+                                                                </connections>
+                                                            </slider>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4C-Gb-Qf5">
                                                                 <rect key="frame" x="243" y="0.0" width="70" height="34"/>
                                                                 <constraints>
@@ -121,9 +127,12 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="z8g-V2-qC2">
                                                         <rect key="frame" x="0.0" y="30.333333333333314" width="313" height="34"/>
                                                         <subviews>
-                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YFA-DP-N7R">
-                                                                <rect key="frame" x="0.0" y="15" width="228" height="4"/>
-                                                            </progressView>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="suH-hx-ZoP">
+                                                                <rect key="frame" x="-2" y="2" width="232" height="31"/>
+                                                                <connections>
+                                                                    <action selector="changeColorAction" destination="KVD-N9-h6e" eventType="valueChanged" id="6CB-QC-Jes"/>
+                                                                </connections>
+                                                            </slider>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ixp-he-P1g">
                                                                 <rect key="frame" x="243" y="0.0" width="70" height="34"/>
                                                                 <constraints>
@@ -167,9 +176,12 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wnw-pu-cLM">
                                                         <rect key="frame" x="0.0" y="30.333333333333314" width="313" height="34"/>
                                                         <subviews>
-                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Smg-yc-MYD">
-                                                                <rect key="frame" x="0.0" y="15" width="228" height="4"/>
-                                                            </progressView>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pg9-3Q-b07">
+                                                                <rect key="frame" x="-2" y="2" width="232" height="31"/>
+                                                                <connections>
+                                                                    <action selector="changeColorAction" destination="KVD-N9-h6e" eventType="valueChanged" id="bvy-iz-JRk"/>
+                                                                </connections>
+                                                            </slider>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="so3-Fb-HnX">
                                                                 <rect key="frame" x="243" y="0.0" width="70" height="34"/>
                                                                 <constraints>
@@ -236,11 +248,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueSlider" destination="suH-hx-ZoP" id="hn9-73-mvy"/>
                         <outlet property="blueTF" destination="Ixp-he-P1g" id="OXX-S4-aT1"/>
                         <outlet property="colorViewOutlet" destination="3Ii-lf-KAC" id="7ow-1V-yXP"/>
+                        <outlet property="greenSlider" destination="PUe-zC-6qV" id="v0F-4i-bNt"/>
                         <outlet property="greenTF" destination="r4C-Gb-Qf5" id="cID-yb-lrh"/>
                         <outlet property="hexColorTF" destination="UtV-1J-c1w" id="RV9-CJ-AKN"/>
+                        <outlet property="opacitySlider" destination="pg9-3Q-b07" id="kAF-7P-xDR"/>
                         <outlet property="opacityTF" destination="so3-Fb-HnX" id="UVk-bc-PzJ"/>
+                        <outlet property="redSlider" destination="Gay-vm-yk8" id="BD5-yl-mAa"/>
                         <outlet property="redTF" destination="nzt-FQ-ZLf" id="d7i-ri-s7J"/>
                         <outlet property="viewOutlet" destination="bS1-jb-Zm4" id="I1g-5W-tbc"/>
                     </connections>
